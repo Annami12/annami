@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-row>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+          <div>About Us</div>
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+      </ion-row>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-col>
+  <ion-card class="welcome-card">
+      <img src="/assets/11.png" alt="" width=50% height=20% />
+      <ion-card-header>
+        <ion-card-subtitle>About Us</ion-card-subtitle>
+        <ion-card-title>Petty Shop</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Siap Melayani kebutuhan Hewan Peliharaan Anda</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-item>
+      <ion-label position="floating">Kritik dan Saran</ion-label>
+      <ion-textarea [(ngModel)]="kritik"></ion-textarea>
+   </ion-item>
+   <ion-row>
+      <ion-col>
+        <div></div>
+      </ion-col>
+      <ion-col>
+    <ion-button full (click)="ngOnInit()">send</ion-button>
+      </ion-col>
+      <ion-col>
+        <div></div>
+      </ion-col>
+  </ion-row>
+ 
+</ion-content>
